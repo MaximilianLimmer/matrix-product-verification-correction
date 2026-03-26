@@ -12,7 +12,7 @@ The implementation follows the formal frameworks of **Künnemann** and **Gąsien
 #### 1. Deterministic Verification (Künnemann)
 * **Complexity:** $\tilde{\mathcal{O}}(n^2 + tn)$
 * **Logic:** Instead of random sampling, the algorithm uses a deterministic approach to identify if $A \times B \neq C$.
-* * **Optimization:** Leverages **Fast Multipoint Evaluation (FME)**. My analysis identified FME as the primary bottleneck, accounting for up to 97% of total runtime, which led to specialized number-theoretic optimizations.
+* **Optimization:** Leverages **Fast Multipoint Evaluation (FME)**. My analysis identified FME as the primary bottleneck, accounting for up to 97% of total runtime, which led to specialized number-theoretic optimizations.
 
 #### 2. Error Correction (Gąsieniec et al.)
 * **Complexity:** $\tilde{\mathcal{O}}(tn^2)$
